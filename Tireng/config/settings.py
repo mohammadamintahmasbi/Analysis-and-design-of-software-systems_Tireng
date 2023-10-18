@@ -29,6 +29,13 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+LOCAL_APPS = [
+    
+]
+
+THIRD_PARTY_APPS = [
+    'rest-framework'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    *THIRD_PARTY_APPS,
+    *LOCAL_APPS,
 ]
 
 MIDDLEWARE = [
