@@ -29,12 +29,15 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-LOCAL_APPS = [
+
+THIRD_PARTY_APPS = [
+    'rest_framework',
+    'drf_yasg',
     
 ]
 
-THIRD_PARTY_APPS = [
-    'rest-framework'
+LOCAL_APPS = [
+    
 ]
 
 INSTALLED_APPS = [
