@@ -1,20 +1,24 @@
-# Use an official Python runtime as the base image
+# Use the official Python image as the base image
 FROM python:3.9
 
-# Set the working directory to /app
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements.txt file to the container
+# Copy the requirements file to the working directory
 COPY requirements.txt .
 
 # Install the project dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the project files to the container
+# Copy the project files to the working directory
 COPY . .
 
-# Expose the port that your Django application will run on
+# Expose the port on which the Django development server will run
 EXPOSE 8000
 
-# Specify the command to run your Django application
-CMD python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0.0:8000
+# Run the Django development server
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

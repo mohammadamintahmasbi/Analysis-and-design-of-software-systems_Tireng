@@ -1,0 +1,19 @@
+# Ignore development files and directories
+.dockerignore
+.git
+.gitignore
+.vscode
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore project-specific files and directories
+db.sqlite3
+media
+staticfiles
+
+# Ignore Docker-related files and directories
+Dockerfile
+docker-compose.yml
+.dockerignore
