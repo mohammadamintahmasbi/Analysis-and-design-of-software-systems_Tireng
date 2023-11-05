@@ -10,3 +10,20 @@ services:
     volumes:
       - .:/app
     command: python manage.py runserver 0.0.0.0:8000
+
+  apidb:
+    container_name: pg
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin1234
+      - POSTGRES_DB=postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    image: postgres
+
+
+volumes:
+  postgres_data:
