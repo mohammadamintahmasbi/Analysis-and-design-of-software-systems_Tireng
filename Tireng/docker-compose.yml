@@ -10,20 +10,25 @@ services:
     volumes:
       - .:/app
     command: python manage.py runserver 0.0.0.0:8000
+    networks:
+      - tireng_network
+    depends_on:
+      - tireng_pg
 
-  apidb:
-    container_name: pg
-    environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=admin1234
-      - POSTGRES_DB=postgres
+  tireng_pg:
+    image: postgres
+    container_name: tireng_pg
+    env_file:
+      - env/.env
     restart: always
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data/
-    image: postgres
-
+    networks:
+      - tireng_network
 
 volumes:
   postgres_data:
+networks:
+  tireng_network:
