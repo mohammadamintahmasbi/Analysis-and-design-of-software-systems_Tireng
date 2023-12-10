@@ -17,6 +17,7 @@ import os
 env = environ.Env()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+APPS_DIR = BASE_DIR / "Tireng"
 
 env.read_env(os.path.join(BASE_DIR, "env/.env"))
 
@@ -42,7 +43,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    
+    'Tireng.users',
 ]
 
 INSTALLED_APPS = [
@@ -67,6 +68,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+MEDIA_ROOT = str(APPS_DIR / "media")
+# https://docs.djangoproject.com/en/dev/ref/settings/#media-url
+MEDIA_URL = "/media/"
 
 TEMPLATES = [
     {
