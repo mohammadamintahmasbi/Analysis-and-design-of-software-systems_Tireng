@@ -20,7 +20,7 @@ env = environ.Env()
 BASE_DIR = Path(__file__).resolve().parent.parent
 APPS_DIR = BASE_DIR / "tireng"
 
-env.read_env(os.path.join(BASE_DIR, "env/.env"))
+env.read_env(os.path.join(BASE_DIR, "env/development.env"))
 
 
 # Quick-start development settings - unsuitable for production
