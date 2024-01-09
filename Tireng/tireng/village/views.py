@@ -1,8 +1,6 @@
-from django.shortcuts import render
-from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import CreateAPIView, DestroyAPIView, UpdateAPIView, ListAPIView, RetrieveUpdateAPIView
-from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated, AllowAny
+
 from .models import Village
 from .serializers import VillageSerializer
 from .permissions import IsAllowedToAddVillage, IsOwnerOfSpeceficVillage
