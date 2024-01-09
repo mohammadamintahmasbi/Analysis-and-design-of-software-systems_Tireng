@@ -9,7 +9,7 @@ class TestVillageApp(APITestCase):
     @classmethod
     def setUp(cls) -> None:
         cls.test_user = baker.make(User, is_owner = True)
-        cls.test_village = baker.make(Village, owner=cls.test_user)
+        cls.test_village = baker.make(Village, owner=cls.test_user, price_per_day=100)
     
     def test_create_new_village(self):
         client = APIClient()
