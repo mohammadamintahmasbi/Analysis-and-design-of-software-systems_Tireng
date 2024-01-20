@@ -20,5 +20,8 @@ COPY . .
 # Expose the port on which the Django development server will run
 EXPOSE 8000
 
+ENV DJANGO_SETTINGS_MODULE=config.settings
+
+
 # Run the Django development server
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
