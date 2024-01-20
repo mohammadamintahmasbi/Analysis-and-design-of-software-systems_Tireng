@@ -45,7 +45,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "tireng.users",
-    "tireng.village"
+    "tireng.village",
+    "tireng.reservation",
 ]
 
 INSTALLED_APPS = [
