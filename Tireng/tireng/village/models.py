@@ -10,5 +10,6 @@ class Village(models.Model):
     meterage = models.PositiveIntegerField(null=True, blank=True)
     price_per_day = models.PositiveIntegerField(blank=True)
     description = models.TextField(blank=True)
+    max_num = models.PositiveIntegerField(blank=True, null=True)
 
     
