@@ -4,7 +4,7 @@ import vila from "../assets/images/vila.jpg";
 import { FiSearch } from "react-icons/fi";
 
 const Home = () => {
-  const price = 22000000;
+  const price = 2200000;
 
   return (
     <div className="">
@@ -20,7 +20,7 @@ const Home = () => {
               <div className="relative">
                 <input
                   type="text"
-                  className="pr-10 bg-white rounded-lg px-4 py-3 w-96 focus:outline-none focus:border-gray-600 border-[1px] focus:shadow-sm"
+                  className="pr-10 bg-white rounded-lg px-4 py-2 w-96 focus:outline-none focus:border-gray-600 border-[1px] focus:shadow-sm"
                   placeholder="جستجوی ویلا"
                 />
                 <FiSearch
@@ -29,7 +29,7 @@ const Home = () => {
                 />
               </div>
 
-              <button className="rounded-lg px-5 py-3 text-primary font-bold active:bg-gray-200 bg-white">
+              <button className="rounded-lg px-5 py-2 text-primary font-bold active:bg-gray-200 bg-white">
                 جستجو
               </button>
             </div>

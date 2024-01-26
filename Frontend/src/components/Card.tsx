@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({
             <p className="text-gray-500 text-xs sm:text-sm">قیمت برای هر شب</p>
 
             <p className="text-primary text-xs sm:text-sm font-bold">
-              {price.toLocaleString("fa")} ریال
+              {price.toLocaleString("fa")} تومان
             </p>
           </div>
 
