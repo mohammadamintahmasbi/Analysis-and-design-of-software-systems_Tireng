@@ -59,7 +59,7 @@ const Villa = () => {
   return (
     <div>
       <button
-        className="pt-10 flex items-center justify-start pr-10 gap-2"
+        className="pt-10 flex items-center justify-start pr-10 gap-2 pb-20 md:pb-0"
         onClick={() => navigate("/")}
       >
         <FaArrowRightLong />
@@ -67,21 +67,22 @@ const Villa = () => {
       </button>
       <div className="h-[calc(100vh-70px)] flex justify-center gap-5">
         <div className="flex items-center">
-          <div className="h-[40rem] w-[50rem] bg-white shadow-2xl border-[1px] border-gray-200 rounded-xl">
-            <div className="pt-7 pr-7 flex w-full">
-              <div className="w-1/2 h-1/2">
+          <div className="h-[60rem] md:h-[40rem] w-[40rem] md:w-[50rem] bg-white shadow-2xl border-[1px] border-gray-200 rounded-xl">
+            <div className="pt-7 pr-7 flex flex-col md:flex-row w-full">
+              <div className="w-full md:w-1/2 flex justify-center md:justify-normal">
                 <img
                   src={villa_info.image}
                   alt="image of the villa"
-                  style={{ flexShrink: 1, objectFit: "inherit" }}
+                  height={400}
+                  width={400}
                   className="rounded-xl shadow-lg"
                 />
               </div>
-              <div className="w-1/2">
+              <div className="w-full pt-7 md:pt-0 md:w-1/2">
                 <h2 className="text-2xl flex justify-center font-bold">
                   {villa_info.name}
                 </h2>
-                <div className="pt-10 pr-10 flex flex-col gap-3">
+                <div className="pt-10 pr-20 md:pr flex flex-col gap-3">
                   {Object.entries(villa_info).map(([key]) =>
                     names[key] ? (
                       <div className="flex gap-2">
@@ -93,7 +94,9 @@ const Villa = () => {
                 </div>
               </div>
             </div>
-            <p className="w-full pt-10 px-7">{villa_info.description}</p>
+            <p className="w-full pt-10 px-20 md:px-7">
+              {villa_info.description}
+            </p>
             <div className="flex justify-center pt-10">
               <button className="bg-primary py-2 px-7 rounded-lg text-white hover:bg-[#13c3ba]">
                 رزرو ویلا
