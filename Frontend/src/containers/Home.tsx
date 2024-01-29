@@ -1,10 +1,16 @@
 import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
 import vila from "../assets/images/vila.jpg";
+import villa2 from "../assets/images/villa2.jpg";
+import vila3 from "../assets/images/vila3.jpg";
+import vila4 from "../assets/images/vila4.jpg";
+import vila5 from "../assets/images/vila5.jpg";
+import vila6 from "../assets/images/vila6.jpg";
+import vila7 from "../assets/images/vila7.jpg";
 import { FiSearch } from "react-icons/fi";
 
 const Home = () => {
-  const price = 2200000;
+  const price = 2350000;
 
   return (
     <div className="">
@@ -43,49 +49,49 @@ const Home = () => {
         <div className="pt-16 pb-20 px-20 grid place-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
           <Card
             image={vila}
-            description="رزرو ویلا دوخوابه آرمین 2"
+            description="رزرو ویلا دوخوابه شمال 1"
             price={price}
             address="گیلان، لنگرود"
             slug="asd"
           />
           <Card
-            image={vila}
-            description="رزرو ویلا دوخوابه آرمین 2"
+            image={villa2}
+            description="رزرو ویلا دوخوابه شمال 2"
             price={price}
-            address="گیلان، لنگرود"
+            address="مازندران، نمک آبرود"
             slug="asfgd"
           />
           <Card
-            image={vila}
-            description="رزرو ویلا دوخوابه آرمین 2"
+            image={vila3}
+            description="رزرو ویلا دوخوابه شمال 3"
             price={price}
             address="گیلان، لنگرود"
             slug="areqsd"
           />
           <Card
-            image={vila}
-            description="رزرو ویلا دوخوابه آرمین 2"
+            image={vila4}
+            description="رزرو ویلا دوخوابه شمال 4"
+            price={price}
+            address="مازندران، نمک آبرود"
+            slug="aslkld"
+          />
+          <Card
+            image={vila5}
+            description="رزرو ویلا دوخوابه شمال 5"
             price={price}
             address="گیلان، لنگرود"
             slug="aslkld"
           />
           <Card
-            image={vila}
-            description="رزرو ویلا دوخوابه آرمین 2"
+            image={vila6}
+            description="رزرو ویلا دوخوابه شمال 6"
             price={price}
-            address="گیلان، لنگرود"
+            address="مازندران، نمک آبرود"
             slug="aslkld"
           />
           <Card
-            image={vila}
-            description="رزرو ویلا دوخوابه آرمین 2"
-            price={price}
-            address="گیلان، لنگرود"
-            slug="aslkld"
-          />
-          <Card
-            image={vila}
-            description="رزرو ویلا دوخوابه آرمین 2"
+            image={vila7}
+            description="رزرو ویلا دوخوابه شمال 7"
             price={price}
             address="گیلان، لنگرود"
             slug="aslkld"

@@ -5,6 +5,10 @@ import VillaCard from "./components/VillaCard";
 // import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import vila from "../assets/images/vila.jpg";
+import vila3 from "../assets/images/vila3.jpg";
+import vila4 from "../assets/images/vila4.jpg";
+import vila5 from "../assets/images/vila5.jpg";
+import vila6 from "../assets/images/vila6.jpg";
 
 const Admin = () => {
   // const location = useLocation();
@@ -12,13 +16,33 @@ const Admin = () => {
   const [villas, setVillas] = useState([
     {
       name: "رزرو ویلا دوخوابه آرمین 2",
-      owner: "محمد امین طهماسبی نیا چناری",
+      owner: "سید بنیاد ابطحی",
       address: "گیلان، لنگرود",
       num_of_rooms: 2,
       meterage: 120,
-      price_per_day: 2200000,
+      price_per_day: 2350000,
       description: "asdadadasd",
-      image: vila,
+      image: vila3,
+    },
+    {
+      name: "رزرو ویلا دوخوابه آرمین 2",
+      owner: "محمد امین طهماسبی نیا چناری",
+      address: "مازندران، نمک آبرود",
+      num_of_rooms: 2,
+      meterage: 120,
+      price_per_day: 2387000,
+      description: "asdadadasd",
+      image: vila4,
+    },
+    {
+      name: "رزرو ویلا دوخوابه آرمین 2",
+      owner: "سید بنیاد ابطحی",
+      address: "گیلان، لنگرود",
+      num_of_rooms: 2,
+      meterage: 120,
+      price_per_day: 2999000,
+      description: "asdadadasd",
+      image: vila5,
     },
     {
       name: "رزرو ویلا دوخوابه آرمین 2",
@@ -26,39 +50,19 @@ const Admin = () => {
       address: "گیلان، لنگرود",
       num_of_rooms: 2,
       meterage: 120,
-      price_per_day: 2200000,
+      price_per_day: 2340000,
       description: "asdadadasd",
       image: vila,
     },
     {
       name: "رزرو ویلا دوخوابه آرمین 2",
-      owner: "محمد امین طهماسبی نیا چناری",
-      address: "گیلان، لنگرود",
+      owner: "سید بنیاد ابطحی",
+      address: "مازندران، نمک آبرود",
       num_of_rooms: 2,
       meterage: 120,
-      price_per_day: 2200000,
+      price_per_day: 1200000,
       description: "asdadadasd",
-      image: vila,
-    },
-    {
-      name: "رزرو ویلا دوخوابه آرمین 2",
-      owner: "محمد امین طهماسبی نیا چناری",
-      address: "گیلان، لنگرود",
-      num_of_rooms: 2,
-      meterage: 120,
-      price_per_day: 2200000,
-      description: "asdadadasd",
-      image: vila,
-    },
-    {
-      name: "رزرو ویلا دوخوابه آرمین 2",
-      owner: "محمد امین طهماسبی نیا چناری",
-      address: "گیلان، لنگرود",
-      num_of_rooms: 2,
-      meterage: 120,
-      price_per_day: 2200000,
-      description: "asdadadasd",
-      image: vila,
+      image: vila6,
     },
   ]);
   return (

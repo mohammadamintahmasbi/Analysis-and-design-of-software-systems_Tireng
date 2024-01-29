@@ -8,7 +8,7 @@ const Navbar = () => {
       </h2>
       <div className="flex justify-end">
         <div className="pl-5 flex">
-          <p className="pt-3 pl-5">محمد امین طهماسبی نیا چناری</p>
+          <p className="pt-3 pl-5">سید بنیاد طهماسبی نیا چناری</p>
           <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" />
           </Avatar>

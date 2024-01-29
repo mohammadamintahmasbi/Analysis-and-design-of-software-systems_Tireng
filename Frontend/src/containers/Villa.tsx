@@ -18,8 +18,8 @@ const Villa = () => {
   const navigate = useNavigate();
 
   let villa_info: VillaInfo = {
-    name: "ویلا دو خوابه آرمین",
-    owner: "محمد امین طهماسبی نیا چناری",
+    name: "ویلا دو خوابه شمال",
+    owner: "سید بنیاد طهماسبی نیا چناری",
     address: "مازندران، بابل، خیابان شریعتی",
     num_of_rooms: 2,
     meterage: 127,
